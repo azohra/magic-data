@@ -1,0 +1,1 @@
+require 'magic_data/magic_data'
