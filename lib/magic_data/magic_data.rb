@@ -21,7 +21,7 @@ class MagicData
     end
 
     def get(key)
-      @magic[key].call
+      @saved["latest_#{key}"]= @magic[key].call
     end
 
     def get_latest(key)
