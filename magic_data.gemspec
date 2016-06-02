@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'magic_data'
-  spec.version       = '1.0.3'
+  spec.version       = '1.0.5'
   spec.authors       = ['Justin Commu']
   spec.email         = ['Justin.Commu@loblaw.ca']
   spec.summary       = 'Dynamic data library for Ruby.'
@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+
+  spec.add_runtime_dependency 'magic_logger', '>= 0.0.1'
 end
-
-
